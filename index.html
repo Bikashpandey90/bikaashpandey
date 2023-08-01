@@ -1,358 +1,465 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-  
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Personal portfolio Website</title>
+  <!-- ....................Custom Css Link.................... -->
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css'>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&family=Poppins:wght@300&display=swap" rel="stylesheet">
-  
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&family=Poppins:wght@300&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&family=Pacifico&family=Poppins:wght@300&display=swap" rel="stylesheet">
- 
-
-
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 
-
-  <link rel="stylesheet" href=
-  "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-   <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href=
-   "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5823140974647753"
-     crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="x-icon" href="img/profile-pic2.png">
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
   <style>
-    h1,h4{
-      font-family:'Poppins','sans-serif';
-    }
-  </style>
- <style>
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&family=Pacifico&family=Poppins:wght@300&display=swap');
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
-  }
-  body{
-    overflow: hidden;
-    animation: showContainer 3s;
-    
-
-    
-  }
-  #container{
-    
-    display: none;
-    width: 100%;
-    height: 100vh;
-    
-  }
-
-  @keyframes showContainer{
-     from{
-   display: none;
-     }
-     to {
-      display:none;
-     }
-  }
-  nav{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    height: 80px;
-    line-height: 80px;
-    z-index: 111;
-    
-  }
-  .loggo{
-    display: flex;
-    font-size: 40px;
-    font-weight: 800;
-    letter-spacing: 3px;
-    cursor: pointer;
-    text-transform: uppercase;
-    color:#3d535f;
-  }
-  b{
-    font-size: 70px;
-    color: #7f00ff;
-  }
-  .navitems{
-    display: flex;
-    
-  }
-  .navitems li{
-    list-style: none;
-    margin: 0 15px;
-  }
-  .navitems li a{
-    font-size: 25px;
-    letter-spacing: 3px;
-    text-decoration: none;
-    text-transform: capitalize;
-    color:#3d535f;
-  }
-  .navitems li:hover a{
-    color: #7f00ff;
-  }
-  .links a{
-    font-size: 30px;
-    margin: 25px 30px;
-    color:#3d535f;
-  }
-  .wrapper{
-    display: flex;
-    width: 100%;
-    height: calc(100vh-80px);
-     justify-content: center;
-     align-items: center;
-     
-     overflow: hidden;
-  }
-
-  .wrapper::before{
-    position: absolute;
-    content: '';
-    height: 600px;
-    width: 600px;
-    border-radius: 50%;
-    left: -12%;
-    top: 40%;
-    background: linear-gradient(45deg,#7f00ff,pink);
-    animation:object1 6s linear infinite;
-  }
-
-    .wrapper::after{
-      position: absolute;
-      content: '';
-      height: 200px;
-      width: 200px;
-      border-radius: 50%;
-      left: 35%;
-      top: 12%;
-      background: linear-gradient(45deg,#7f00ff,pink);
-      animation:object2 6s linear infinite;
-  
-    
-  }
-
-  @keyframes object1
-  {
-    50%{
-      left: -13%;
-      top:41%;
-
-    }
-  }
-  @keyframes object2
-  {
-    50%{
-      left: 35%;
-      top:10%;
-
-    }
-  }
-  .cols{
-    width:50%;
-      
-  }
-  .cols0{
-width: 60%;
-    z-index: 5;
-  }
-  .topline{
-    display: block;
-    position: relative;
-    font-size: 35px;
-    letter-spacing: 5px;
-    color: #3d535f;
-  }
-  .topline::after{
-    position: absolute;
-    content: '';
-    height:4px;
-    width: 45px;
-    bottom: 10px;
-    background-size: #7f00ff;
-    
-  }
-  h1{
-    display: block;
-    font-size: 7em;
-    font-weight: 900;
-    color: #3d535f;
-  }
-  .multiText{
-    color: #7f00ff;
-    text-transform: capitalize;
-    
-    
-  }
-  p{
-    display:block;
-    width: 90%;
-    font-size: 1.2em;
-    color: #3d535f;
-    
-  }
-  .btns{
-    border-radius: 32px;
-    width:100%;
-    position: relative;
-    left: 150px;
-    
-  }
-  button{
-    outline: none;
-    border: none;
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: 400;
-    color: #fff;
-    background-color: #3d535f;
-    padding: 8px 14px;
-    margin: 40px 5px;
-    letter-spacing: 2px;
-    text-transform: capitalize;
-    box-shadow: 0 15px 10px rgba(0,0,0,0.4);
-  }
-button:hover{
-   background-color: #7f00ff;
- }
- .imgbox{
-   position:relative;
-   width:100%;
-   height: 100%;
- }
- .imgbox img{
-   position: relative;
-   height: 100%;
-   width: calc(130%-80px);
-   top: -50px;
-   
-   right: 5px;
-   animation: animateUser 4s linear infinite;
- }
- @keyframes animateUser
- {
-50%{
-  right: 30px;
-  top: -90px;
-}
-
-
- }
- .imgbox #splashh{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%) rotate(-35deg);
-  width: 160%;
-  filter: saturate(200%);
-  animation: animateee 4s linear infinite;
- }
- @keyframes animateee
- {
-50%{
-  left: 51%;
-  top: 49%;
-  width: 155%;
-}
-
- }
-
-  .imgbox #me{
-    z-index: 15;
-  }
-    *{
-  margin: 0;
-  padding: 0;
-  box-sizing:border-box;
-  
-}
-header{
-  position: relative;
-  left:0;
-  top: 0;
-  width: 100%;
-  height: 80px;
-  
-}
-header h4{
-  position: absolute;
-  left: 10%;
-  bottom: 1rem;
-  font-size: 1.6rem;
-}
-/*splash screen*/
-
-
-
-.intro{
-  display: flex;
-
-  position: fixed;
-  z-index: 100;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: #161616;
-  transition:top 1s;
-  
-}
-.logo-header{
-  position: absolute;
-  top:40%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  color: #ececec;
-}
-.logo{
-  position: relative;
-  display: inline-block;
-  bottom: -20px;
-  opacity: 0;
-  
-  
-}
-.logo.active{
-  bottom:0;
-  opacity: 1;
-  transition: ease-in-out 0.5s;
-}
-.logo.fade{
-  bottom: 150px;
-  opacity:1;
-transition: ease-in-out 0.5s;
-}
-
-
-
-
-
-
-
-
-
 
 @import 'https://fonts.googleapis.com/css?family=Raleway';
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  letter-spacing: .4px;
+}
+:root{
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-dark: #353535;
+  --color-dark-variant: #555555;  
+
+  --transition: .4s ease;
+}
+h1,h2,h3,h4,h5{
+  line-height: 120%;
+}
+h1{
+  font-size: 48px;
+  color: var(--color-black);
+}
+h2{
+  font-size: 28px;
+  color: var(--color-dark-variant);
+}
+h3{
+  font-size: 26px;
+  color: var(--color-black);
+}
+h4{
+  font-size: 19px;
+  color: var(--color-black);
+}
+h5{
+  font-size: 18px;
+  font-weight: 400;
+}
+.heading{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+p{
+  font-size: 17px;
+  line-height: 140%;
+  color: var(--color-dark-variant);
+}
+.heading-p{
+  padding-top: 9rem;
+  text-align: center;
+}
+a{
+  font-size: 24px;
+  color: var(--color-black);
+  text-decoration-color:var(--color-white) ;
+  transition: var(--transition);
+}
+a:hover{
+  color: var(--color-dark-variant);
+  text-decoration-color: var(--color-dark-variant) !important;
+  text-underline-offset:1rem;
+  text-decoration: underline;
+}
+.btn{
+  display: inline-block;
+  width: fit-content;
+  padding: 1rem;
+  width: 8.4rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: var(--color-black);
+  border: 1px solid var(--color-dark-variant);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  transition: var(--transition);
+}
+.btn:hover{
+  background: var(--color-dark-variant);
+  color: var(--color-white);
+}
+.btn-dark{
+  color: var(--color-white);
+  background: var(--color-dark);
+  text-decoration: none !important;
+}
+.btn-dark:hover{
+  background: var(--color-black);
+}
+img{
+  width: 100%;
+  display: block;
+}
+.icon1{
+  width: 32px;
+  height: max-content;
+}
+.container{
+  margin: 0 auto;
+  max-width: 1080px;
+  width: 90%;
+}
+
+/* .......................Start Nav Bar......................... */
+nav{
+  height: 8rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: grid;
+  place-items: center; 
+  background: var(--color-white);  
+}
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+
+
+.nav-links{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+/* .......................End Nav Bar......................... */
+
+
+/* .......................Start Header Section......................... */
+header{
+  padding-top: 14rem;
+}
+.header-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 820px;
+  gap: 20px;
+  justify-content: space-between;  
+}
+.header-right{
+  text-align: center;
+  margin: auto; 
+}
+.header-right p{
+  color: var(--color-dark-variant);
+}
+.header-right h2{
+  margin-top: .2rem;
+}
+.header-action-aria{
+  margin-top: .7rem;
+  display: flex;
+  gap: .7rem;
+}
+.header-social{
+  display: flex;
+  gap: .7rem;
+  justify-content: center;
+  margin: .7rem auto; 
+}
+/* .......................End Header Section......................... */
+
+
+/* .......................Start About Section......................... */
+.about-container{
+  display: grid;
+  grid-template-columns: 38% auto;
+  gap: 4rem;
+  align-items: center;  
+}
+.about-left{
+  border-radius: 20px;
+  overflow: hidden;  
+}
+.basic-edu{
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+.edu-box{
+  padding: 24px;
+  text-align: center;
+  border: 1px solid var(--color-dark-variant);
+  border-radius: 30px;
+  width: 100%;
+}
+.edu-box img{
+  margin: auto;
+}
+/* .......................End About Section......................... */
+
+
+/* .......................Start Experience Section......................... */
+section{
+  position: relative;
+}
+.arrow{
+  position: absolute;
+  right: 3%;
+  transition: var(--transition);
+  margin-top: 1.4rem;
+}
+.arrow:hover{
+  margin-top: 2rem;
+}
+.experience-container{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  gap: 4rem;
+}
+.experience-box{
+  border: 1px solid var(--color-dark-variant);
+  border-radius: 30px;
+  padding: 24px;
+}
+.experience-box h2{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.experience{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.ex-div{
+  margin: auto;
+  display: flex;
+  gap: 20px;
+}
+/* .......................End Experience Section......................... */
+
+
+/* .......................Start Projects Section......................... */
+.project-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+.project{
+  padding: 24px;
+  border: 1px solid var(--color-dark-variant);  
+  border-radius: 30px;
+  text-align: center;
+}
+.project img{
+  border-radius: 30px;
+  margin-bottom: 1rem;
+}
+/* .......................End Projects Section......................... */
+
+
+/* .......................Start Contact Section......................... */
+.contact-container{
+  max-width: 30rem;
+  border: 1px solid var(--color-dark-variant);
+  padding: 24px;  
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.email,.linkedin{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+/* .......................End Contact Section......................... */
+
+
+/* .......................Start Footer Section......................... */
+footer{
+  margin-top: 9rem;
+  padding: 30px;
+  text-align: center;
+}
+footer .nav-links{
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+/* .......................End Footer Section......................... */
+
+
+/* .......................Start Media Screen ......................... */
+/* Max-Width(1024px) */
+@media (max-width:1024px) {
+    /*Start About  */
+    .about-container{
+      gap: 30px;
+    }
+    .basic-edu{
+      gap: 20px;
+    }
+    /*Start Experience  */
+    .experience-container{
+      gap: 30px;
+    }
+    /*Start Projects  */
+    .project-container{
+      grid-template-columns: repeat(2,1fr);
+    }
+}
+/* Max-Width(991px) */
+@media (max-width:991px) {
+    /*Start Nav  */
+
+    .nav-links{
+      justify-content: center;    
+      width: 100%;
+    }
+    /*Start Experience  */
+    .experience-container{
+      grid-template-columns: 1fr;
+    }   
+}
+/* Max-Width(768px) */
+@media (max-width:768px) {
+  .profile{
+  left: 30%;
+  width: 290px;
+}
+  h1{
+    font-size: 38px;    
+  }
+  h2{
+    font-size: 26px;
+  }
+  a{
+    font-size: 20px;
+  }
+  h3{
+    font-size: 24px;
+  }
+  .arrow{
+    right: 5%;
+  }
+    /*Start Header  */
+    .header-container{
+      width: 90%;
+      grid-template-columns: 1fr;
+    }
+    .header-left{
+      width: 70%;
+      margin: 0 auto;
+    }
+    /*Start About  */
+    .about-container{
+      grid-template-columns: 1fr;
+    }    
+    .about-left{
+      width: 70%;
+      margin: 0 auto;
+    }
+    .basic-edu{
+      gap: 10px;
+    }
+    /*Start Experinec  */ 
+    .experience-box{
+      padding: 10px;
+    }
+    .experience{
+      gap: 20px;
+    }
+    .ex-div{
+      gap: 10px;
+    }
+    /*Start projects  */ 
+    .project-container{
+      grid-template-columns: 1fr;
+    }    
+}
+/* Max-Width(600px) */
+@media (max-width:600px) {
+  .profile{
+  left: 35%;
+  width: 290px;
+}.profile.content::before{
+    width: 200px;
+  }
+  
+ 
+
+
+  a{
+    font-size: 18px;    
+  }
+  /* .......Start Nav........*/
+  .nav-links{
+    gap: 0;
+    justify-content: space-between;    
+  }
+  /* .......Start Contact........*/
+  .contact-container {
+    flex-direction: column;  
+    gap: 1rem;  
+  }
+  /* .......Start footer........*/
+  footer{
+    padding: 0;
+    padding-bottom: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 9rem;
+  }
+  footer .nav-links{
+    width: 100%;  
+    justify-content: space-between;  
+  }
+}
+/* .......................End Media Scrin......................... */
+
+
+
+
+
+
+
 * {
   outline: none;
   user-select: none;
@@ -360,37 +467,32 @@ transition: ease-in-out 0.5s;
 
 body, html {
   margin: 0;
-
+  
 }
 
-body {
-  font-family: "Raleway", "Microsoft JhengHei", Arial, sans-serif;
-}
+
+
+
+
 
 .profile {
-  
-  z-index: 10;
+  z-index: 1;
   width: 330px;
   height: 100px;
   position: absolute;
-  top: 20%;
+  top: 18%;
   left: 25%;
   transform: translate(-50%, -50%);
   border-radius: 5px;
   background-color: #fafafa;
   box-shadow: 0 0 1rem #babbbc;
   animation: show-profile 0.5s forwards ease-in-out;
-  animation-delay: 3.7s;
-  
 }
 @keyframes show-profile {
   0% {
     width: 0;
   }
 }
-
-
-
 .profile .photo, .profile .content {
   box-sizing: border-box;
 }
@@ -404,7 +506,6 @@ body {
   margin-left: -50px;
   box-shadow: 0 0 0.5rem #babbbc;
   animation: rotate-photo 0.5s forwards ease-in-out;
-  animation-delay: 3.7s;
 }
 @keyframes rotate-photo {
   100% {
@@ -415,9 +516,10 @@ body {
   width: 100%;
 }
 .profile .content {
+    
   padding: 10px;
   overflow: hidden;
-  position: absolute;
+  position:absolute;
   width: 100%;
   height: 100%;
   top: 0;
@@ -441,15 +543,8 @@ body {
 .profile .content .text h4, .profile .content .text h6 {
   font-weight: normal;
   margin: 3px 0;
- 
-  color: #161616;
   letter-spacing: 0.5px;
   white-space: nowrap;
-
-}
-
-.profile .content .text h6{
-  font-size: small;
 }
 .profile .content .btn {
   background-color: #abc;
@@ -463,7 +558,6 @@ body {
   cursor: pointer;
   transition-duration: 0.3s;
   animation: pop-btn 0.3s both ease-in-out 0.5s;
-  animation-delay: 3.7s;
 }
 @keyframes pop-btn {
   0% {
@@ -488,7 +582,6 @@ body {
   left: 20%;
   transform: translateY(-50%);
   animation: to-hamburger 0.3s forwards ease-in-out;
-  
 }
 .profile .content .btn span::before, .profile .content .btn span::after {
   content: "";
@@ -548,7 +641,7 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 50%;
- 
+  background-color: #ececec;
   font-size: 26px;
   text-align: center;
   line-height: 50px;
@@ -558,7 +651,6 @@ body {
   box-shadow: 0 0 0.5rem #babbbc;
   transition-duration: 0.3s;
 }
-
 .profile .box i:hover {
   transition-delay: initial !important;
   box-shadow: 0 0 0 5px #babbbc;
@@ -592,196 +684,420 @@ body {
 
 
 
+/*  ..................................
+    splash screen .............*/
 
 
 
 
+    .intro{
+      display: flex;
+    
+      position: fixed;
+      z-index: 2;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #161616;
+      transition:top 1s;
+      
+    }
+    .logo-header{
+      position: absolute;
+      top:40%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      color: #ececec;
+    }
+    .logo{
+    
+      font-size: 6rem;
+      font-family:'Poppins','sans-serif';
+      position: relative;
+      display: inline-block;
+      bottom: -20px;
+      opacity: 0;
+      
+      
+    }
+    .logo.active{
+      bottom:0;
+      opacity: 1;
+      transition: ease-in-out 0.5s;
+    }
+    .logo.fade{
+      bottom: 150px;
+      opacity:1;
+    transition: ease-in-out 0.5s;
+    }
+
+   
+      
+     
+      
+    
+
+
+/* Add a media query for small devices */
+@media (max-width: 490px) {
+.profile{
+width: 280px;
+
+}
+  
+
+  
+  .logo{
+        font-size: 3rem;
+      }
+ 
+}
+
+  @media (max-width:850px) {
+  .profile{
+    top: 25%;
+    left: 30%;
+  }
+
+  }
+  @media (max-width:700px) {
+  .profile{
+    left: 35%;
+  }
+
+  }
+
+  @media (max-width:600px) {
+
+.profile{
+  left: 45%;
+
+
+}
+
+}
+@media (max-width:330px) {
+
+.profile{
+  display: none;
+
+
+}
+
+}
 
 
 
-
+    
   </style>
+
+
+
+
 </head>
 
-<body>
-<div class="intro">
-  <h1 class="logo-header">
-    
-    <span class="logo">KI</span><span class="logo">NG.</span>
-    
-  </h1>
-</div>
 
+<body >
 
-
-
-
-<body>
+  <div class="intro">
+    <h1 class="logo-header">
+      
+      <span class="logo">KI</span><span class="logo">NG.</span>
+      
+    </h1>
+  </div>
   
-  <div class="container" id="container">
+  <!-- ....................Start Nav Bar.................... -->
   <nav>
-   <div class="loggo">
-     king<b>.</b>
-   </div>
-   <div class="navitems">
-     <ul class="navitems">
-     <li>
-       <a href="#">Home</a>
-       
-     </li>
-     <li>
-       <a href="#">About</a>
-       
-     </li>
-     <li>
-       <a href="#">Services</a>
-       
-     </li>
-     <li>
-       <a href="#">Blog</a>
-       
-     </li>
-     <li>
-       <a href="#">Contacts</a>
-       
-     </li>
-     </ul>
-   </div>
-  </nav>  
-  <div class="wrapper">
-    <div class="cols cols0">
-      <span class="topline">Hello</span>
-      <h1>
-        I'm<span class="multiText">Coder</span></h1>
-        <p>Hi there I'm Bikash Pandey,a computer science student.I have a passion for web development.I have a strong work ethic and I'm committed to delivering high quality results.I am always looking for new challenges and opportunities to grow both professionally and personally.Thank you for visiting my website,and I look forward to connecting with you.
+
+ 
+  
+
+    
+    <div class="container nav-container">
+
+      
+      <a href="" class="logo"></a>
+      
+      <ul class="nav-links">
+        <li><a href="#About">About</a></li>
+        <li><a href="#Experiences">Experiences</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  
+
+  
+
+
+  <!-- ....................End Nav Bar.................... -->
+
+
+  <!-- ....................Start Header Section.................... -->
+ 
+  <header>
+    
+    <div class="container header-container">
+     
+      <div class="header-left">
+        <img src="./img/profile-pic2.png" alt="" id="profile-photo">
+      </div>
+      <div class="header-right">
+        <p><b>Hello, I'm</b></p>
+        <h1>Bikash Pandey</h1>
+        <h2>Frontend Developer</h2>
+        <div class="header-action-aria">
+          <a href="./test.pdf" class="btn" download>Download CV</a>       
+          <a href="#Contact" class="btn btn-dark">Contact info</a>              
+        </div>
+        <div class="header-social">
+          <a href="https://www.linkedin.com/in/bikash-pandey-3795951b1" ><img src="./img/linkedin.png" class="icon1" ></a>
+          <a href="https:/github.com/Bikashpandey90"><img src="./img/github.png" class="icon1"></a>
+        </div>
+      </div>
+   
+    </div>
+ 
+  </header>
+
+  <!-- ....................End Header Section.................... -->
+
+
+  <!-- ....................Start About Section.................... -->
+  <section id="About">
+    <p class="heading-p">Get To Know More</p>
+    <h1 class="heading">About Me</h1>
+    <div class="container about-container">
+      <div class="about-left">
+        <img src="./img/about-pic2.jpg" alt="">
+      </div>
+      <div class="about-right">
+        <div class="basic-edu">
+          <div class="edu-box">
+            <img src="./img/experience.png" class="icon1">
+            <h4>Experience</h4>
+            <p>
+              2+ years <br>
+              Frontend Development              
+            </p>
+          </div>
+          <div class="edu-box">
+            <img src="./img/education.png" class="icon1">
+            <h4>Education</h4>
+            <p>
+              +2 level <br>
+            </p>
+          </div>
+        </div>
+        <p >
+          Hi there I'm Bikash Pandey,a computer science student.I have a passion for web development.I have a strong work ethic and I'm committed to delivering high quality results.I am always looking for new challenges and opportunities to grow both professionally and personally.Thank you for visiting my website,and I look forward to connecting with you.
         </p>
-        <div class="btns">
-          <button>
-            Download Cv
-          </button>
-          <button>Hire me!</button>
-        </div>
-        
-      
-      
-    </div>
-    
-    
-    <div class="cols cols1">
-      <div class="imgbox">
-       
-        <img src="transparent2.png" id="me">
       </div>
+    </div>
+  </section> 
+  <!-- ....................End About Section.................... -->
+
+
+  <!-- ....................Start Experience Section.................... -->
+  <section id="Experiences">
+    <a href="#Experiences" class="arrow"><img src="./img/arrow.png" class="icon1"></a>
+    <p class="heading-p">Explore My</p>
+    <h1 class="heading">Experience</h1>
+    <div class="container experience-container">
+      <div class="experience-box">
+        <h2>Frontend Development</h2>
+        <div class="experience">
+          <div class="ex-div">
+            <img src="./img/checkmark.png" class="icon1">
+            <div>
+              <h4>HTML</h4>
+              <p>Experienced</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="./img/checkmark.png" class="icon1">
+            <div>
+              <h4>CSS</h4>
+              <p>Experienced</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="./img/checkmark.png" class="icon1">
+            <div>
+              <h4>SASS</h4>
+              <p>Intermediate</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="./img/checkmark.png" class="icon1">
+            <div>
+              <h4>JavaScript</h4>
+              <p>Basic</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="./img/checkmark.png" class="icon1">
+            <div>
+              <h4>Vue.JS</h4>
+              <p>Intermediate</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="./img/checkmark.png" class="icon1">
+            <div>
+              <h4>React</h4>
+              <p>Intermediate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-box">
+        <h2>Backend Development</h2>
+        <div class="experience">
+          <div class="ex-div">
+            <img src="./img/checkmark.png" class="icon1">
+            <div>
+              <h4>PostgreSQL</h4>
+              <p>Basic</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="./img/checkmark.png" class="icon1">
+            <div>
+              <h4>Node JS</h4>
+              <p>Basic</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="./img/checkmark.png" class="icon1">
+            <div>
+              <h4>Express JS</h4>
+              <p>Basic</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="./img/checkmark.png" class="icon1">
+            <div>
+              <h4>Git</h4>
+              <p>Intermediate</p>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ....................End Experience Section.................... -->
+
+
+  <!-- ....................Start Project Section.................... -->
+  <section id="Projects">
+    <a href="#Projects" class="arrow"><img src="./img/arrow.png" class="icon1"></a>
+    <p class="heading-p">Browse My Recent</p>
+    <h1 class="heading">Projects</h1>
+    <div class="container project-container">
+      <div class="project">
+        <img src="./img/project-1.png" alt="">
+        <h3>Chat app</h3>
+        <div class="header-action-aria">
+          <a href="" class="btn">Github</a>
+          <a href="./Setro.apk" class="btn" download>Download</a>
+        </div>
+      </div>
+      <div class="project">
+        <img src="./img/project-2.png" alt="">
+        <h3>Project 2</h3>
+        <div class="header-action-aria">
+          <a href="#" class="btn">Github</a>
+          <a href="#" class="btn">Live Demo</a>
+        </div>
+      </div>
+      <div class="project">
+        <img src="./img/project-3.png" alt="">
+        <h3>Project 3</h3>
+        <div class="header-action-aria">
+          <a href="" class="btn">Github</a>
+          <a href="" class="btn">Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ....................End Project Section.................... -->
+
+
+  <!-- ....................Start Contact Section.................... -->
+  <section id="Contact">
+    <a href="#Contact" class="arrow"><img src="./img/arrow.png" class="icon1"></a>
+    <p class="heading-p">Get in Touch</p>
+    <h1 class="heading">Contact Me</h1>
+    <div class="contact-container container">
+      <div class="email">
+        <img src="./img/email.png" class="icon1">
+        <a href="mailto:bikashpandey835@gmail.com"><h5>bikashpandey835@gmail.com</h5></a>
+      </div>
+      <div class="linkedin">
+        <img src="./img/linkedin.png" class="icon1">
+        <a href="https://www.linkedin.com/in/bikash-pandey-3795951b1"><h5>Linkedin</h5></a>
+      </div>
+    </div>
+  </section>
+  <!-- ....................End Contact Section.................... -->
+
+
+  <!-- ....................Start Footer Section.................... -->
+  <footer>
+    <ul class="nav-links">
+      <li><a href="#About">About</a></li>
+      <li><a href="#Experiences">Experiences</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+    <p>&copy; Copyright Your Bikash Pandey || All Rights Reserved.</p>
+  </footer>
+  <!-- ....................End Footer Section.................... -->
+
+   <!-- partial:index.partial.html -->
+   <div class="profile " id="profile">
+    <div class="photo" ><img src="img/hency.png"/></div>
+    <div class="content">
+      <div class="text">
+        <h4 style=" font-family: 'Poppins',sans-serif;
+        font-size: larger;">Bikash Pandey</h4>
+        <h6
+        style="    font-family: 'Poppins',sans-serif;
+        font-size:small;
+        ">Front-end Web Developer</h6>
+      </div>
+      <div class="btn" id="btn"><span></span></div>
+    </div>
+    <div class="box">
+        <i class="fa fa-instagram"onclick="location.href='https://instagram.com/bikas.hpandey?igshid=ZDdkNTZiNTM='"></i>
+      <i class="fa fa-facebook"onclick="location.href='https://www.facebook.com/profile.php?id=100027889004467'"></i>
+      <i class="fa fa-github"onclick="location.href='https://github.com/Bikashpandey90'"></i>
+      <i class="fa fa-codepen"onclick="location.href='https://codepen.io/bikaashpandey'"></i>
+      <i class="fa fa-twitter"onclick="location.href='https://twitter.com/BikashP11871970?t=rsOiTkgmheIUS0BvLXU_ZQ&s=09'"></i>
     </div>
   </div>
-  </div>
-
-
-
-  <body>
-    <!-- partial:index.partial.html -->
-    <div class="profile " id="profile">
-      <div class="photo"><img src="hency.png"/></div>
-      <div class="content">
-        <div class="text">
-          <h4>Bikash Pandey</h4>
-          <h6>Front-end Web Developer</h6>
-        </div>
-        <div class="btn" id="btn"><span></span></div>
-      </div>
-      <div class="box">
-            
-            
-          <i class="fa fa-instagram"
-          onclick="location.href='https://instagram.com/bikas.hpandey?igshid=ZDdkNTZiNTM='">
-    
-    
-          </i>
-       
-        <i class="fa fa-facebook"
-        onclick="location.href='https://www.facebook.com/profile.php?id=100027889004467'"></i>
-        
-        
-        <i class="fa fa-github"onclick="location.href='https://github.com/Bikashpandey90'"></i>
-        
-
-
-
-        
-        <i class="fa fa-youtube"onclick="location.href='https://youtube.com/@BikaashPandey'"></i>
-        
-        <i class="fa fa-twitter"
-         onclick="location.href='https://twitter.com/BikashP11871970?t=rsOiTkgmheIUS0BvLXU_ZQ&s=09'"></i>
-      </div>
-    </div>
-    <!-- partial -->
-      
-    
-    
-    
-      <script>
-        (function() {
-      $('.btn').click(function() {
-        $(this).toggleClass('active');
-        return $('.box').toggleClass('open');
-      });
-    
-    }).call(this);
-    
-    
-      </script>
-
-
   <!-- partial -->
-  <script>
-   window.onload= function(){
-    console.log("window has loaded");
-    setTimeout(function(){
-      let container= document.getElementById("container");
-
-      container.style.display="block";
-    },3700);
     
-   };
-  </script>
   
-  
-  
+
     <script>
       (function() {
-        document.getElementById("btn").addEventListener("click",function(){
-          console.log("Button was clicked");
-        })
     $('.btn').click(function() {
-      $(this).toggleClass('.logo.active');
-      return $('.box').toggleClass('.open');
+      $(this).toggleClass('active');
+      return $('.box').toggleClass('open');
     });
   
   }).call(this);
   
   
     </script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>
-    var typingEffect=new Typed(".multiText",{
-      strings:["Coder","Youtuber","Designer"],
-      loop:true,
-      typeSpeed:100,
-      backSpeed:80,
-      backDelay:1500
-    })
-  </script>
-
-
-
-
-
-
-
-
-
-
- 
+    
 <script >
   let intro = document.querySelector('.intro');
 let logo = document.querySelector('.logo-header');
@@ -809,9 +1125,10 @@ window.addEventListener('DOMContentLoaded', () => {
     }, 2300);
   }, 1000);
 });
-
   
 </script>
-</body>
 
+
+
+</body>
 </html>
