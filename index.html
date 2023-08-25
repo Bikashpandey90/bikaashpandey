@@ -1163,6 +1163,49 @@ window.addEventListener('DOMContentLoaded', () => {
     }, 2300);
   }, 1000);
 });
+  document.addEventListener("DOMContentLoaded", function () {
+  // Function to scroll to the app section
+  function scrollToAppSection() {
+    const appSection = document.getElementById("Projects");
+    const targetPosition = appSection.getBoundingClientRect().top;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    const duration = 1000; // Set the duration of the scroll animation (in milliseconds)
+    let startTimestamp;
+
+    function scrollAnimation(timestamp) {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const elapsed = timestamp - startTimestamp;
+      const progress = Math.min(elapsed / duration, 1);
+      const easeProgress = easeOutCubic(progress); // Apply a cubic easing function
+
+      window.scrollTo(0, startPosition + distance * easeProgress);
+
+      if (progress < 1) {
+        requestAnimationFrame(scrollAnimation);
+      }
+    }
+
+    // Easing function
+    function easeOutCubic(t) {
+      return 1 - Math.pow(1 - t, 3);
+    }
+
+    requestAnimationFrame(scrollAnimation);
+  }
+
+  // Check if the referral is from Facebook and trigger auto-scroll if true
+  function checkReferralAndScroll() {
+    const facebookReferral = /facebook\.com|fb\.me/i; // Regular expression to match Facebook domains
+    if (document.referrer.match(facebookReferral)) {
+      setTimeout(scrollToAppSection, 3000); // 3000 milliseconds = 3 seconds
+    }
+  }
+
+  // Call the function to check referral and trigger auto-scroll
+  checkReferralAndScroll();
+});
+
   
 </script>
 
